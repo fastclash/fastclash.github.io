@@ -1,0 +1,501 @@
+<!doctype html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://fastclash.github.io/news/article-115144.htm" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>全面掌控网络自由：Padavan路由器配置V2Ray透明代理终极指南</title>
+        <meta name="description" content="在信息高度发达的今天，互联网已成为人们日常生活中不可或缺的一部分。与此同时，信息审查、网络封锁、地域限制、隐私泄露等问题，也让人们对网络自由与数据安全的渴望愈加强烈。为了在家中乃至所有设备上实现稳定、" />
+        <link rel="icon" href="/assets/website/img/clash_meta/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Fast Clash订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://fastclash.github.io/news/article-115144.htm" />
+    <meta property="og:site_name" content="Fast Clash订阅中文网" />
+    <meta property="og:title" content="全面掌控网络自由：Padavan路由器配置V2Ray透明代理终极指南" />
+    <meta property="og:image" content="https://fastclash.github.io/uploads/20240803-1/9c357afd746a12d215b453e2ea6089c3.webp" />
+        <meta property="og:release_date" content="2025-05-15T08:27:30" />
+    <meta property="og:updated_time" content="2025-05-15T08:27:30" />
+        <meta property="og:description" content="在信息高度发达的今天，互联网已成为人们日常生活中不可或缺的一部分。与此同时，信息审查、网络封锁、地域限制、隐私泄露等问题，也让人们对网络自由与数据安全的渴望愈加强烈。为了在家中乃至所有设备上实现稳定、" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="全面掌控网络自由：Padavan路由器配置V2Ray透明代理终极指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/assets/website/css/clash_meta/style-starter.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EXTHNM1R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P1EXTHNM1R');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+                                <a class="navbar-brand" href="/">
+                    Fast Clash                </a>
+                                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-lg-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+            <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-5">
+                <h1 class="title pt-5">全面掌控网络自由：Padavan路由器配置V2Ray透明代理终极指南</h1>
+                <ul class="breadcrumbs-custom-path mt-3 text-center">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/news/"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> 新闻资讯</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> 正文</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <section class="w3l-homeblock1">
+        <div class="midd-w3 py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="38" data-end="199" class="">在信息高度发达的今天，互联网已成为人们日常生活中不可或缺的一部分。与此同时，信息审查、网络封锁、地域限制、隐私泄露等问题，也让人们对网络自由与数据安全的渴望愈加强烈。为了在家中乃至所有设备上实现稳定、高效、安全的“科学上网”环境，许多技术爱好者将目光投向了<strong data-start="166" data-end="192">Padavan路由器 + V2Ray透明代理</strong>这一经典组合。</p>
+<p data-start="201" data-end="293" class="">本文将从零开始，带你了解如何在Padavan固件路由器上成功配置V2Ray透明代理服务，打造一个无需逐台设备配置、真正全局生效的网络代理环境。不仅适合新手上手，也足够专业应对进阶需求。</p>
+<hr data-start="295" data-end="298" class="" style="">
+<h2 data-start="300" data-end="319" class="">一、什么是Padavan路由器？</h2>
+<p data-start="321" data-end="416" class="">Padavan并非某个品牌的硬件，而是一个基于Linux的第三方定制固件，主要用于一些Broadcom或MediaTek芯片的路由器。它以轻量、稳定、开源、强扩展性而受到广大技术用户的喜爱。</p>
+<p data-start="418" data-end="433" class=""><strong data-start="418" data-end="433">Padavan的优势：</strong></p>
+<ul data-start="435" data-end="558">
+<li data-start="435" data-end="461" class="" style="">
+<p data-start="437" data-end="461" class=""><strong data-start="437" data-end="448">图形化界面操作</strong>，非专业人士也能轻松上手；</p>
+</li>
+<li data-start="462" data-end="496" class="" style="">
+<p data-start="464" data-end="496" class=""><strong data-start="464" data-end="474">支持各种插件</strong>：如SS、SSR、V2Ray等科学上网组件；</p>
+</li>
+<li data-start="497" data-end="526" class="">
+<p data-start="499" data-end="526" class=""><strong data-start="499" data-end="507">系统稳定</strong>：运行长时间不掉线，适合作为主力路由；</p>
+</li>
+<li data-start="527" data-end="558" class="">
+<p data-start="529" data-end="558" class=""><strong data-start="529" data-end="537">高度定制</strong>：支持脚本、自定义DNS、防火墙规则设置。</p>
+</li>
+</ul>
+<p data-start="560" data-end="606" class="">如果你正在寻找一款能“全家设备一键上网”的解决方案，Padavan路由器提供了强有力的基础。</p>
+<hr data-start="608" data-end="611" class="">
+<h2 data-start="613" data-end="634" class="">二、V2Ray简介：不仅仅是代理工具</h2>
+<p data-start="636" data-end="723" class="">V2Ray是一个网络代理工具框架，由知名项目V2Fly团队开发，支持VMess、VLess、Shadowsocks、Socks、HTTP等协议，具备强大的路由能力和高隐匿性。</p>
+<p data-start="725" data-end="740" class=""><strong data-start="725" data-end="740">V2Ray的核心功能：</strong></p>
+<ul data-start="742" data-end="877">
+<li data-start="742" data-end="781" class="">
+<p data-start="744" data-end="781" class="">支持多种协议和传输方式，如TCP、WebSocket、mKCP、TLS等；</p>
+</li>
+<li data-start="782" data-end="805" class="">
+<p data-start="784" data-end="805" class="">内建动态路由功能，自动识别是否需要走代理；</p>
+</li>
+<li data-start="806" data-end="847" class="">
+<p data-start="808" data-end="847" class="">多平台支持，可运行于Windows、Linux、macOS、Android等；</p>
+</li>
+<li data-start="848" data-end="877" class="">
+<p data-start="850" data-end="877" class="">支持透明代理，即“全设备全流量代理”，无需客户端配置。</p>
+</li>
+</ul>
+<p data-start="879" data-end="907" class="">V2Ray透明代理，正是家庭级科学上网架构中的核心组件。</p>
+<hr data-start="909" data-end="912" class="">
+<h2 data-start="914" data-end="938" class="">三、为何选择“透明代理 + 路由器”组合？</h2>
+<p data-start="940" data-end="999" class="">透明代理指的是在<strong data-start="948" data-end="960">无需每台设备配置</strong>的前提下，路由器自动将所有指定网络请求转发到代理服务器，真正做到“一劳永逸”。</p>
+<p data-start="1001" data-end="1010" class=""><strong data-start="1001" data-end="1010">好处包括：</strong></p>
+<ul data-start="1012" data-end="1121">
+<li data-start="1012" data-end="1040" class="">
+<p data-start="1014" data-end="1040" class=""><strong data-start="1014" data-end="1023">无需客户端</strong>：手机、平板、电视盒子统统免设置；</p>
+</li>
+<li data-start="1041" data-end="1066" class="">
+<p data-start="1043" data-end="1066" class=""><strong data-start="1043" data-end="1053">统一流量出口</strong>：管理、分析和监控更方便；</p>
+</li>
+<li data-start="1067" data-end="1093" class="">
+<p data-start="1069" data-end="1093" class=""><strong data-start="1069" data-end="1077">保护隐私</strong>：所有设备通过一个安全节点通信；</p>
+</li>
+<li data-start="1094" data-end="1121" class="">
+<p data-start="1096" data-end="1121" class=""><strong data-start="1096" data-end="1106">全屋科学上网</strong>：家里所有人都能享受畅通网络。</p>
+</li>
+</ul>
+<p data-start="1123" data-end="1180" class="">而实现透明代理的“发动机”，就是V2Ray；实现“调度”的则是路由器。Padavan恰好提供了二者完美结合的环境。</p>
+<hr data-start="1182" data-end="1185" class="">
+<h2 data-start="1187" data-end="1205" class="">四、准备工作：你需要具备什么？</h2>
+<ol data-start="1207" data-end="1388">
+<li data-start="1207" data-end="1247" class="">
+<p data-start="1210" data-end="1247" class=""><strong data-start="1210" data-end="1229">支持Padavan固件的路由器</strong>（如斐讯K2、K2P、小米R3等）；</p>
+</li>
+<li data-start="1248" data-end="1288" class="">
+<p data-start="1251" data-end="1288" class=""><strong data-start="1251" data-end="1267">已刷入Padavan系统</strong>（建议使用集成V2Ray管理插件的版本）；</p>
+</li>
+<li data-start="1289" data-end="1325" class="">
+<p data-start="1292" data-end="1325" class=""><strong data-start="1292" data-end="1308">一组V2Ray服务器配置</strong>，可通过自建节点或第三方机场获取；</p>
+</li>
+<li data-start="1326" data-end="1361" class="">
+<p data-start="1329" data-end="1361" class=""><strong data-start="1329" data-end="1339">基础网络知识</strong>，如IP地址、端口、子网掩码、DNS设置等；</p>
+</li>
+<li data-start="1362" data-end="1388" class="">
+<p data-start="1365" data-end="1388" class=""><strong data-start="1365" data-end="1373">一台电脑</strong>，用于操作路由器后台管理页面。</p>
+</li>
+</ol>
+<hr data-start="1390" data-end="1393" class="">
+<h2 data-start="1395" data-end="1415" class="">五、V2Ray透明代理配置流程详解</h2>
+<h3 data-start="1417" data-end="1438" class="">第一步：进入Padavan后台界面</h3>
+<ol data-start="1440" data-end="1516">
+<li data-start="1440" data-end="1462" class="">
+<p data-start="1443" data-end="1462" class="">使用电脑连接你的Padavan路由器；</p>
+</li>
+<li data-start="1463" data-end="1503" class="">
+<p data-start="1466" data-end="1503" class="">浏览器访问 <code data-start="1472" data-end="1487">192.168.123.1</code>（默认IP），输入账号密码登录；</p>
+</li>
+<li data-start="1504" data-end="1516" class="">
+<p data-start="1507" data-end="1516" class="">进入后台控制面板。</p>
+</li>
+</ol>
+<h3 data-start="1518" data-end="1536" class="">第二步：启用科学上网插件功能</h3>
+<ol data-start="1538" data-end="1627">
+<li data-start="1538" data-end="1574" class="">
+<p data-start="1541" data-end="1574" class="">找到左侧菜单中的 <strong data-start="1550" data-end="1560">“科学上网”</strong> 或 <strong data-start="1563" data-end="1573">“插件管理”</strong>；</p>
+</li>
+<li data-start="1575" data-end="1627" class="">
+<p data-start="1578" data-end="1627" class="">若内置有V2Ray模块，选择“开启V2Ray”；若无，则需手动安装插件（可通过U盘或SSH上传）。</p>
+</li>
+</ol>
+<h3 data-start="1629" data-end="1648" class="">第三步：填写V2Ray节点信息</h3>
+<ul data-start="1650" data-end="1880">
+<li data-start="1650" data-end="1676" class="">
+<p data-start="1652" data-end="1676" class=""><strong data-start="1652" data-end="1658">类型</strong>：选择 VMess 或 VLess；</p>
+</li>
+<li data-start="1677" data-end="1697" class="">
+<p data-start="1679" data-end="1697" class=""><strong data-start="1679" data-end="1685">地址</strong>：你的服务器IP或域名；</p>
+</li>
+<li data-start="1698" data-end="1721" class="">
+<p data-start="1700" data-end="1721" class=""><strong data-start="1700" data-end="1706">端口</strong>：常见为443、10086等；</p>
+</li>
+<li data-start="1722" data-end="1749" class="">
+<p data-start="1724" data-end="1749" class=""><strong data-start="1724" data-end="1732">UUID</strong>：你从机场或自己生成的专属身份码；</p>
+</li>
+<li data-start="1750" data-end="1788" class="">
+<p data-start="1752" data-end="1788" class=""><strong data-start="1752" data-end="1765">加密方式、传输协议</strong>：如TCP、WS+TLS，根据服务商提供填写；</p>
+</li>
+<li data-start="1789" data-end="1830" class="">
+<p data-start="1791" data-end="1830" class=""><strong data-start="1791" data-end="1803">路径（Path）</strong>：若用WebSocket协议，需填写如 <code data-start="1823" data-end="1829">/ray</code>；</p>
+</li>
+<li data-start="1831" data-end="1853" class="">
+<p data-start="1833" data-end="1853" class=""><strong data-start="1833" data-end="1840">SNI</strong>：开启TLS时的伪装域名；</p>
+</li>
+<li data-start="1854" data-end="1880" class="">
+<p data-start="1856" data-end="1880" class=""><strong data-start="1856" data-end="1869">ALPN/Host</strong>：依据服务商配置填写。</p>
+</li>
+</ul>
+<blockquote data-start="1882" data-end="1911">
+<p data-start="1884" data-end="1911" class="">✅ 注意：填写错误会导致无法连接，请务必一项一项核对。</p>
+</blockquote>
+<h3 data-start="1913" data-end="1929" class="">第四步：配置透明代理规则</h3>
+<p data-start="1931" data-end="1963" class="">Padavan的V2Ray插件通常内建路由规则设置，按如下配置：</p>
+<ul data-start="1965" data-end="2125">
+<li data-start="1965" data-end="1996" class="">
+<p data-start="1967" data-end="1996" class="">开启 <strong data-start="1970" data-end="1978">透明代理</strong> 或 <strong data-start="1981" data-end="1995">Redirect模式</strong>；</p>
+</li>
+<li data-start="1997" data-end="2017" class="">
+<p data-start="1999" data-end="2017" class="">设置监听端口（如 <code data-start="2008" data-end="2015">12345</code>）；</p>
+</li>
+<li data-start="2018" data-end="2046" class="">
+<p data-start="2020" data-end="2046" class="">指定哪些IP或域名走代理（国内常用IP可设置绕过）；</p>
+</li>
+<li data-start="2047" data-end="2087" class="">
+<p data-start="2049" data-end="2087" class="">配置DNS解析方式（建议使用DNS污染防护，如FakeDNS或DNS转发）；</p>
+</li>
+<li data-start="2088" data-end="2125" class="">
+<p data-start="2090" data-end="2125" class="">启用<strong data-start="2092" data-end="2105">自动更新GFW列表</strong>和<strong data-start="2106" data-end="2122">绕过局域网及中国大陆地址</strong>选项。</p>
+</li>
+</ul>
+<h3 data-start="2127" data-end="2144" class="">第五步：保存设置并重启服务</h3>
+<p data-start="2146" data-end="2187" class="">点击“保存并应用”，然后点击“启动服务”或“重启路由器”，待几秒钟后重新连网测试。</p>
+<hr data-start="2189" data-end="2192" class="">
+<h2 data-start="2194" data-end="2210" class="">六、如何验证代理是否生效？</h2>
+<ol data-start="2212" data-end="2483">
+<li data-start="2212" data-end="2315" class="">
+<p data-start="2215" data-end="2315" class="">在任何已连接路由器的设备上访问 <a data-start="2231" data-end="2263" rel="noopener" target="_new" class="" href="https://www.google.com">Google</a> 或 <a data-start="2266" data-end="2300" rel="noopener" target="_new" class="" href="https://www.youtube.com">YouTube</a>，如可正常加载，说明配置成功；</p>
+</li>
+<li data-start="2316" data-end="2412" class="">
+<p data-start="2319" data-end="2412" class="">使用 <a data-start="2322" data-end="2345" rel="noopener" target="_new" class="" href="https://ip.sb/">ip.sb</a> 或 <a data-start="2348" data-end="2392" rel="noopener" target="_new" class="" href="https://whatismyipaddress.com/">WhatIsMyIP</a> 查看IP归属地是否为你设置的代理节点；</p>
+</li>
+<li data-start="2413" data-end="2483" class="">
+<p data-start="2416" data-end="2483" class="">Padavan界面查看V2Ray运行日志，如出现 handshake success、request sent 等字样，代表服务正常。</p>
+</li>
+</ol>
+<hr data-start="2485" data-end="2488" class="">
+<h2 data-start="2490" data-end="2504" class="">七、常见问题与解决方案</h2>
+<p data-start="2506" data-end="2590" class=""><strong data-start="2506" data-end="2547">Q1：V2Ray插件无法连接，日志提示 handshake failed？</strong><br data-start="2547" data-end="2550">
+A：检查UUID、地址、端口、传输协议是否填写正确；服务器端是否开启了相应服务。</p>
+<p data-start="2592" data-end="2649" class=""><strong data-start="2592" data-end="2611">Q2：速度很慢、延迟高怎么办？</strong><br data-start="2611" data-end="2614">
+A：尝试切换节点、更换协议（如WS改为TCP），或启用Mux复用传输。</p>
+<p data-start="2651" data-end="2701" class=""><strong data-start="2651" data-end="2670">Q3：如何让某些设备不走代理？</strong><br data-start="2670" data-end="2673">
+A：在路由规则中设置IP白名单，排除不需要走代理的设备。</p>
+<p data-start="2703" data-end="2763" class=""><strong data-start="2703" data-end="2721">Q4：配置正确但打不开外网？</strong><br data-start="2721" data-end="2724">
+A：检查DNS设置是否被污染，推荐使用 DoH 或 DNS-over-TLS。</p>
+<hr data-start="2765" data-end="2768" class="">
+<h2 data-start="2770" data-end="2781" class="">八、进阶技巧推荐</h2>
+<ul data-start="2783" data-end="2915">
+<li data-start="2783" data-end="2823" class="">
+<p data-start="2785" data-end="2823" class="">配合AdGuard Home使用，实现DNS广告屏蔽 + 科学上网双重效果；</p>
+</li>
+<li data-start="2824" data-end="2847" class="">
+<p data-start="2826" data-end="2847" class="">利用定时任务每天自动更新GFW列表和规则；</p>
+</li>
+<li data-start="2848" data-end="2874" class="">
+<p data-start="2850" data-end="2874" class="">为不同设备设置不同的分流策略，实现更精细化控制；</p>
+</li>
+<li data-start="2875" data-end="2915" class="">
+<p data-start="2877" data-end="2915" class="">自建V2Ray服务器，搭配Cloudflare中转，提升隐匿性与抗封锁能力。</p>
+</li>
+</ul>
+<hr data-start="2917" data-end="2920" class="">
+<h2 data-start="2922" data-end="2929" class="">九、总结</h2>
+<p data-start="2931" data-end="3016" class="">在科学上网的世界里，Padavan路由器与V2Ray透明代理的结合无疑是一种高效、智能且实用的解决方案。它不仅让网络访问更加自由顺畅，还极大提升了网络安全与隐私保护能力。</p>
+<p data-start="3018" data-end="3075" class="">通过本文的详细教程，你已经可以掌握从基础准备到进阶配置的全过程，让全屋所有设备一键实现安全、便捷、高速的网络环境。</p>
+<hr data-start="3077" data-end="3080" class="">
+<h2 data-start="3082" data-end="3113" class="">点评：技术落地的智慧之选，真正实现网络自由的“家庭中枢”</h2>
+<p data-start="3115" data-end="3239" class="">这篇指南并非单纯的“配置手册”，而是一次对用户需求与技术实现的精准对接。通过严谨的逻辑与通俗易懂的叙述，成功构建出一个<strong data-start="3174" data-end="3188">从概念引导到操作落地</strong>的完整路径。文章把高深抽象的网络术语解构得层次分明，既保留了技术细节，又充分照顾到读者的实际操作体验。</p>
+<p data-start="3241" data-end="3355" class="">如果说V2Ray是通向网络自由的“钥匙”，那么Padavan路由器就是那把稳固的“门锁”。两者结合之妙，尽在文中娓娓道来。真正实现了让技术<strong data-start="3310" data-end="3325">为人所用，而非高高在上</strong>的理念。这不仅是一份教程，更是一次对技术与自由交汇点的致敬。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-114827.htm">Clash机场配置安全全解：风险真相与防护全攻略</a></p>
+                                        <p>下一个：<a href="/news/article-115443.htm">深度解析Shadowrocket小火箭泥鳅哥：安装、配置与实用全指南</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-103097.htm" title="路由器科学上网配置详解：轻松突破网络限制，畅享全球互联网">路由器科学上网配置详解：轻松突破网络限制，畅享全球互联网</a></li>
+                        <li class="py-2"><a href="/news/article-114217.htm" title="掌控你的安卓网络：全面解析 Clash 规则使用全攻略">掌控你的安卓网络：全面解析 Clash 规则使用全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-108828.htm" title="v2rayng 2011版本全面解析与使用指南">v2rayng 2011版本全面解析与使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-112355.htm" title="玩个机吧全攻略：新手也能轻松掌握的科学上网神器使用指南">玩个机吧全攻略：新手也能轻松掌握的科学上网神器使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-100695.htm" title="深入解析Shadowrocket配置文件：完整教程与使用技巧">深入解析Shadowrocket配置文件：完整教程与使用技巧</a></li>
+                        <li class="py-2"><a href="/news/article-100532.htm" title="深度解析Clash端口配置：为什么要改？怎么改？全方位指南">深度解析Clash端口配置：为什么要改？怎么改？全方位指南</a></li>
+                        <li class="py-2"><a href="/news/article-104674.htm" title="完全指南：如何更新Quantumult，提升您的网络体验">完全指南：如何更新Quantumult，提升您的网络体验</a></li>
+                        <li class="py-2"><a href="/news/article-113622.htm" title="安卓更新与科学上网全面攻略：提升体验与保障安全的双重利器">安卓更新与科学上网全面攻略：提升体验与保障安全的双重利器</a></li>
+                        <li class="py-2"><a href="/news/article-105299.htm" title="苹果帝国的攻守道：全球科技产业链的竞合博弈全景">苹果帝国的攻守道：全球科技产业链的竞合博弈全景</a></li>
+                        <li class="py-2"><a href="/news/article-107269.htm" title="如何在Sugar Clash中剪辑视频：一步步掌握视频剪辑技巧">如何在Sugar Clash中剪辑视频：一步步掌握视频剪辑技巧</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <!-- copyright -->
+        <section class="w3l-copyright text-center">
+            <div class="container">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p class="copy-footer-29">
+                Fast Clash订阅中文网 版权所有 Powered by WordPress
+                </p>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                &#10548;
+            </button>
+            <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <!-- /move top -->
+        </section>
+        <!-- //copyright -->
+    </section>
+    <!-- //footer -->
+    <!-- all js scripts and files here -->
+    <script src="/assets/website/js/frontend/clash_meta/theme-change.js"></script><!-- theme switch js (light and dark)-->
+    <script src="/assets/website/js/frontend/clash_meta/jquery-3.5.1.min.js"></script><!-- default jQuery -->
+    <script src="/assets/website/js/frontend/clash_meta/jquery.magnific-popup.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+    <!--/MENU-JS-->
+    <script>
+    $(window).on("scroll", function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function() {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function() {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+    </script>
+    <!--//MENU-JS-->
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/clash_meta/bootstrap.min.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
