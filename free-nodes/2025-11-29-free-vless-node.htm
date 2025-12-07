@@ -307,24 +307,9 @@ SSR相对轻量，适合性能一般的设备。</p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 如何在 Windows 上加速游戏？</h5></div>
-    <div class="panel-body">
-        Netch 使用 TUN/TAP 模式将特定进程流量通过代理转发，常用于游戏加速。用户只需将游戏进程添加到列表，选择合适的代理节点，即可降低延迟并绕过地理限制。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 策略组如何提升节点切换效率？</h5></div>
-    <div class="panel-body">
-        通过策略组可设置节点优先级和分流规则，结合延迟检测功能，Clash 自动选择延迟低、稳定性高的节点处理不同流量，提高网页、视频和游戏访问速度及整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>如何配置 Clash 的 GEOIP 分流？</h5></div>
     <div class="panel-body">
         Clash 支持使用 GEOIP 数据库进行区域分流。用户在规则文件中添加 `GEOIP,CN,DIRECT` 可使国内流量直连，而国外流量走代理，从而提升整体网络性能。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 的传输效率比 Trojan 高吗？</h5></div>
-    <div class="panel-body">
-        在高延迟环境下，VLESS + XTLS 的性能通常比 Trojan 高。XTLS 去掉了冗余加密开销，降低 CPU 占用，提高多连接场景下的吞吐率，尤其在服务器高负载情况下表现更佳。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
@@ -332,19 +317,29 @@ SSR相对轻量，适合性能一般的设备。</p>
         管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 模式相比 TCP 有哪些优势？</h5></div>
-    <div class="panel-body">
-        QUIC 协议基于 UDP，可减少握手延迟并在高丢包环境下保持较好体验。Hysteria2 对 QUIC 进行了优化，支持自适应拥塞控制与加密，能在移动网络中比 TCP 拥有更快的响应速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 的延迟测速功能如何提高网络体验？</h5></div>
     <div class="panel-body">
         PassWall2 可以定期测速节点延迟，并结合策略组自动选择最优节点。这样在访问网站或视频时，可以始终使用延迟最低的线路，提高网络稳定性和速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 模式相比 TCP 有哪些优势？</h5></div>
+    <div class="panel-body">
+        QUIC 协议基于 UDP，可减少握手延迟并在高丢包环境下保持较好体验。Hysteria2 对 QUIC 进行了优化，支持自适应拥塞控制与加密，能在移动网络中比 TCP 拥有更快的响应速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 的传输效率比 Trojan 高吗？</h5></div>
+    <div class="panel-body">
+        在高延迟环境下，VLESS + XTLS 的性能通常比 Trojan 高。XTLS 去掉了冗余加密开销，降低 CPU 占用，提高多连接场景下的吞吐率，尤其在服务器高负载情况下表现更佳。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的延迟检测如何帮助节点选择？</h5></div>
     <div class="panel-body">
         Clash 会定期测速节点延迟，并根据策略组自动选择延迟最低节点处理流量。可避免访问高延迟或失效节点，提高网页、视频和游戏访问速度及稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 策略组如何提升节点切换效率？</h5></div>
+    <div class="panel-body">
+        通过策略组可设置节点优先级和分流规则，结合延迟检测功能，Clash 自动选择延迟低、稳定性高的节点处理不同流量，提高网页、视频和游戏访问速度及整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 节点延迟检测如何帮助分流？</h5></div>
@@ -354,7 +349,12 @@ SSR相对轻量，适合性能一般的设备。</p>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 在移动网络的优势？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多节点切换，可提升网页浏览、视频播放和游戏的连接稳定性和流畅度。    </div>
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多节点切换，可提升网页浏览、视频播放和游戏的连接稳定性和流畅度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 如何在 Windows 上加速游戏？</h5></div>
+    <div class="panel-body">
+        Netch 使用 TUN/TAP 模式将特定进程流量通过代理转发，常用于游戏加速。用户只需将游戏进程添加到列表，选择合适的代理节点，即可降低延迟并绕过地理限制。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -383,16 +383,16 @@ SSR相对轻量，适合性能一般的设备。</p>
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-20-free-vless-node.htm" title="Fast Clash - 11月20日20.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月20日20.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-node-share.htm" title="Fast Clash - 10月12日19.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月12日19.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-vless-github.htm" title="Fast Clash - 10月7日18.7M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月7日18.7M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-31-free-node-subscribe-links.htm" title="Fast Clash - 10月31日19.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月31日19.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-28-free-subscribe-node.htm" title="Fast Clash - 11月28日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月28日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-18-node-share-links.htm" title="Fast Clash - 10月18日18.4M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月18日18.4M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-7-latest-vless-node.htm" title="Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-10-free-vless-node.htm" title="Fast Clash - 11月10日18.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月10日18.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-27-node-share.htm" title="Fast Clash - 11月27日18.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月27日18.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-11-free-node-subscribe.htm" title="Fast Clash - 11月11日20.9M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月11日20.9M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-17-today-vless-node.htm" title="Fast Clash - 11月17日22.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月17日22.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-18-vless-node-github.htm" title="Fast Clash - 11月18日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月18日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-7-node-share-links.htm" title="Fast Clash - 12月7日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月7日22.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-3-vless-github.htm" title="Fast Clash - 12月3日19.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月3日19.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-30-vless-github.htm" title="Fast Clash - 11月30日18.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月30日18.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-25-free-node-subscribe.htm" title="Fast Clash - 10月25日23M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月25日23M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-4-node-share-links.htm" title="Fast Clash - 11月4日18.2M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月4日18.2M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-19-today-vless-node.htm" title="Fast Clash - 10月19日20.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 10月19日20.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-15-node-share-links.htm" title="Fast Clash - 11月15日22.7M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月15日22.7M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
                     </ul>
     </div>
 </div>
@@ -404,10 +404,10 @@ SSR相对轻量，适合性能一般的设备。</p>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                     </ul>
     </div>
