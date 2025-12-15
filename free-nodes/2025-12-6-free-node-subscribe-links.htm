@@ -153,39 +153,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 是否兼容 Clash 配置文件？</h5></div>
+    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
     <div class="panel-body">
-        部分兼容。Sing-box 支持从 Clash 订阅转换工具导入节点，但配置语法略有不同。建议使用第三方订阅转换器，如 sub-converter，将 Clash 格式转换为 Sing-box JSON 格式使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
-    <div class="panel-body">
-        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
-    <div class="panel-body">
-        QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
-    <div class="panel-body">
-        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
+        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 支持哪些内核？</h5></div>
     <div class="panel-body">
         PassWall2 支持多种代理内核，如 Xray、V2Ray、Sing-box、Trojan-go、Hysteria2 等。用户可在插件管理中切换所需内核，以获得不同协议与性能的支持。部分内核需手动下载并启用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 协议混淆如何增强安全性？</h5></div>
-    <div class="panel-body">
-        SSR 可通过选择混淆方式和协议组合隐藏真实流量特征，降低被 DPI 检测和封锁风险。合理配置可提高节点隐蔽性和长期可用性，保证科学上网体验稳定可靠。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式适合什么场景？</h5></div>
-    <div class="panel-body">
-        PAC 模式通过 JavaScript 文件动态判断哪些流量走代理，哪些直连。适合访问国内外混合网站环境，用户无需手动切换节点即可根据规则自动分流。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 客户端延迟测试值不稳定怎么办？</h5></div>
@@ -198,9 +173,34 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         在 Potatso Lite 的配置页点击“导入”，粘贴订阅链接并确认导入。系统会自动解析节点列表，可在主界面查看并选择不同线路。部分机场支持一键导入格式，省去手动配置步骤。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
+    <div class="panel-heading"><h5>SSR 协议混淆如何增强安全性？</h5></div>
     <div class="panel-body">
-        SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。    </div>
+        SSR 可通过选择混淆方式和协议组合隐藏真实流量特征，降低被 DPI 检测和封锁风险。合理配置可提高节点隐蔽性和长期可用性，保证科学上网体验稳定可靠。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式适合什么场景？</h5></div>
+    <div class="panel-body">
+        PAC 模式通过 JavaScript 文件动态判断哪些流量走代理，哪些直连。适合访问国内外混合网站环境，用户无需手动切换节点即可根据规则自动分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
+    <div class="panel-body">
+        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
+    <div class="panel-body">
+        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 是否兼容 Clash 配置文件？</h5></div>
+    <div class="panel-body">
+        部分兼容。Sing-box 支持从 Clash 订阅转换工具导入节点，但配置语法略有不同。建议使用第三方订阅转换器，如 sub-converter，将 Clash 格式转换为 Sing-box JSON 格式使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
+    <div class="panel-body">
+        QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -229,16 +229,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-13-latest-vless-node.htm" title="Fast Clash - 11月13日22.3M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月13日22.3M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-23-today-vless-node.htm" title="Fast Clash - 11月23日21.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月23日21.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-7-latest-vless-node.htm" title="Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-28-free-subscribe-node.htm" title="Fast Clash - 11月28日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月28日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-3-vless-github.htm" title="Fast Clash - 12月3日19.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月3日19.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-10-free-vless-node.htm" title="Fast Clash - 11月10日18.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月10日18.1M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-12-latest-vless-node.htm" title="Fast Clash - 11月12日20.1M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月12日20.1M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-21-free-subscribe-node.htm" title="Fast Clash - 11月21日22.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月21日22.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-19-vless-github.htm" title="Fast Clash - 11月19日21.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月19日21.7M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-9-node-share-links.htm" title="Fast Clash - 11月9日21.8M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月9日21.8M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-10-vless-node.htm" title="Fast Clash - 12月10日21.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月10日21.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-13-vless-windows.htm" title="Fast Clash - 12月13日20.2M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月13日20.2M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-14-today-vless-node.htm" title="Fast Clash - 11月14日20M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月14日20M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-21-free-subscribe-node.htm" title="Fast Clash - 11月21日22.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月21日22.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-2-free-node-subscribe.htm" title="Fast Clash - 12月2日22.2M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 12月2日22.2M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-17-today-vless-node.htm" title="Fast Clash - 11月17日22.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月17日22.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-30-vless-github.htm" title="Fast Clash - 11月30日18.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月30日18.7M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-7-latest-vless-node.htm" title="Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 11月7日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a></li>
                     </ul>
     </div>
 </div>
@@ -250,7 +250,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
