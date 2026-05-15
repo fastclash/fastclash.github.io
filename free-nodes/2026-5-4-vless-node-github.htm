@@ -336,6 +336,11 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密在封锁网络中有什么优势？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可以防止数据被篡改和流量特征泄露，降低被检测风险。在封锁较高的网络环境中，保证节点长期可用，提高数据传输安全性和访问可靠性，增强用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的分流规则可以按端口分配节点吗？</h5></div>
     <div class="panel-body">
         支持。用户可通过端口号匹配流量，将不同应用的流量分配到指定节点，实现精准分流。结合策略组使用，可优化访问速度和网络稳定性。<hr />    </div>
@@ -346,14 +351,24 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
         PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan TLS 伪装如何降低被封锁风险？</h5></div>
+    <div class="panel-body">
+        通过选择真实可访问的域名并安装有效证书，Trojan 流量可完全模拟 HTTPS 请求。这样可隐藏流量特征，降低被封锁和 DPI 检测的可能性，保证节点长期可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
+    <div class="panel-body">
+        支持。Shadowrocket 可以设置定时更新周期，例如每隔 12 小时或每天自动刷新订阅链接，确保节点列表保持最新状态。这样无需手动更新即可长期稳定使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 协议和混淆组合如何优化稳定性？</h5></div>
+    <div class="panel-body">
+        根据网络封锁情况选择合适协议和混淆组合，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提高抗封锁能力和稳定性，保证节点长期可用并优化网络连接。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的路由规则能否实现分国家代理？</h5></div>
     <div class="panel-body">
         Sing-box 支持 GeoIP 路由规则，通过引入国家数据库可根据 IP 自动判断地理位置。例如可设置 CN 走直连，US/JP 走代理，以此实现分国家策略路由，适合需要访问不同地区内容的用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在封锁网络中有什么优势？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可以防止数据被篡改和流量特征泄露，降低被检测风险。在封锁较高的网络环境中，保证节点长期可用，提高数据传输安全性和访问可靠性，增强用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 的 TCP/UDP 分流适合哪些应用？</h5></div>
@@ -364,21 +379,6 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     <div class="panel-heading"><h5>Trojan-Go 的多路复用（mux）如何开启？</h5></div>
     <div class="panel-body">
         Trojan-Go 在配置文件中通过启用 mux 参数即可实现多路复用。此功能允许多个连接共享同一隧道，减少握手延迟并提升整体传输效率，尤其在移动网络中表现出色。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
-    <div class="panel-body">
-        支持。Shadowrocket 可以设置定时更新周期，例如每隔 12 小时或每天自动刷新订阅链接，确保节点列表保持最新状态。这样无需手动更新即可长期稳定使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan TLS 伪装如何降低被封锁风险？</h5></div>
-    <div class="panel-body">
-        通过选择真实可访问的域名并安装有效证书，Trojan 流量可完全模拟 HTTPS 请求。这样可隐藏流量特征，降低被封锁和 DPI 检测的可能性，保证节点长期可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 协议和混淆组合如何优化稳定性？</h5></div>
-    <div class="panel-body">
-        根据网络封锁情况选择合适协议和混淆组合，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提高抗封锁能力和稳定性，保证节点长期可用并优化网络连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 是否支持自动测速节点？</h5></div>
@@ -412,15 +412,15 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-27-node-share-links.htm" title="Fast Clash - 4月27日20.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月27日20.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-23-free-node-subscribe-links.htm" title="Fast Clash - 4月23日18.6M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月23日18.6M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-15-free-node-subscribe-links.htm" title="Fast Clash - 4月15日19.8M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月15日19.8M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-node-share-links.htm" title="Fast Clash - 4月21日20.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月21日20.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-5-free-node-subscribe.htm" title="Fast Clash - 5月5日22.7M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月5日22.7M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-19-node-share-links.htm" title="Fast Clash - 4月19日21.7M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月19日21.7M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-2-vless-github.htm" title="Fast Clash - 5月2日18.6M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月2日18.6M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-28-today-vless-node.htm" title="Fast Clash - 4月28日19.8M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月28日19.8M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-latest-vless-node.htm" title="Fast Clash - 5月8日21.7M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月8日21.7M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-free-subscribe-node.htm" title="Fast Clash - 4月20日18.7M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月20日18.7M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-18-node-share.htm" title="Fast Clash - 4月18日19.6M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月18日19.6M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-26-free-vless-node.htm" title="Fast Clash - 4月26日22.3M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月26日22.3M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-17-node-share.htm" title="Fast Clash - 4月17日21.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月17日21.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-21-node-share-links.htm" title="Fast Clash - 4月21日20.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月21日20.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-vless-node-share.htm" title="Fast Clash - 5月6日21.8M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月6日21.8M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-latest-vless-node.htm" title="Fast Clash - 5月9日21.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月9日21.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-free-node-subscribe-links.htm" title="Fast Clash - 4月29日23M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月29日23M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-22-node-share.htm" title="Fast Clash - 4月22日22.7M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 4月22日22.7M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a></li>
                     </ul>
     </div>
@@ -433,10 +433,10 @@ ntpdate -u ntp.aliyun.com &gt;&gt; /var/log/ntp.log 2&gt;&amp;1
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
