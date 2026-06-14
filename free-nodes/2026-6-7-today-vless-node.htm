@@ -241,22 +241,13 @@ sudo apt-get install build-essential git
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-6-6-node-share.htm">Fast Clash - 6月6日20.1M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-6-8-vless-node-share.htm">Fast Clash - 6月8日18.8M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 传输在高丢包环境下表现如何？</h5></div>
+    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
     <div class="panel-body">
-        QUIC 基于 UDP，具备拥塞控制和重传机制，在高丢包环境下仍能保持稳定连接。Hysteria2 利用 QUIC 特性，使流量高效传输，延迟低且稳定性好。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 UDP 转发模式适合哪些应用？</h5></div>
-    <div class="panel-body">
-        UDP 转发模式适合游戏、语音通话和实时视频等需要低延迟的应用。通过代理 UDP 流量，可以保证这些应用在代理环境下仍然保持快速响应。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 无法识别某游戏流量时应如何处理？</h5></div>
-    <div class="panel-body">
-        请确认已启用 TUN 模式并在游戏路径中选择正确的执行文件。部分游戏使用反作弊系统需管理员权限运行 Netch；若仍无法识别，可尝试手动添加端口规则。<hr />    </div>
+        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
@@ -264,19 +255,29 @@ sudo apt-get install build-essential git
         QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Vmess 节点使用 WebSocket + TLS 时应注意哪些参数？</h5></div>
+    <div class="panel-body">
+        需确保路径（path）与主机名（host）匹配服务器配置，TLS 证书有效，端口与防火墙设置开放。建议开启 mux 与 keepalive 优化连接稳定性，并定期测试延迟避免 CDN 缓存导致连接异常。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 传输在高丢包环境下表现如何？</h5></div>
+    <div class="panel-body">
+        QUIC 基于 UDP，具备拥塞控制和重传机制，在高丢包环境下仍能保持稳定连接。Hysteria2 利用 QUIC 特性，使流量高效传输，延迟低且稳定性好。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 无法识别某游戏流量时应如何处理？</h5></div>
+    <div class="panel-body">
+        请确认已启用 TUN 模式并在游戏路径中选择正确的执行文件。部分游戏使用反作弊系统需管理员权限运行 Netch；若仍无法识别，可尝试手动添加端口规则。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 如何为游戏流量提供加速？</h5></div>
     <div class="panel-body">
         Netch 支持 UDP 转发，可为游戏流量建立高速通道。结合策略组和节点延迟检测，可减少丢包和延迟，保证游戏访问稳定流畅，提高网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
+    <div class="panel-heading"><h5>Netch 的 UDP 转发模式适合哪些应用？</h5></div>
     <div class="panel-body">
-        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
-    <div class="panel-body">
-        可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
+        UDP 转发模式适合游戏、语音通话和实时视频等需要低延迟的应用。通过代理 UDP 流量，可以保证这些应用在代理环境下仍然保持快速响应。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件与加密方式如何搭配使用？</h5></div>
@@ -284,9 +285,9 @@ sudo apt-get install build-essential git
         协议插件可增强抗封锁能力，加密方式确保数据安全。合理搭配可模拟正常流量特征，同时保障传输安全，有助于在封锁严格环境下维持节点可用性和稳定连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Vmess 节点使用 WebSocket + TLS 时应注意哪些参数？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
     <div class="panel-body">
-        需确保路径（path）与主机名（host）匹配服务器配置，TLS 证书有效，端口与防火墙设置开放。建议开启 mux 与 keepalive 优化连接稳定性，并定期测试延迟避免 CDN 缓存导致连接异常。<hr />    </div>
+        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的测速功能如何优化节点选择？</h5></div>
@@ -341,16 +342,16 @@ sudo apt-get install build-essential git
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-27-vless-windows.htm" title="Fast Clash - 5月27日19.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月27日19.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-16-vless-node-share.htm" title="Fast Clash - 5月16日21.2M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月16日21.2M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-3-free-node-subscribe.htm" title="Fast Clash - 6月3日21.6M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月3日21.6M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-20-free-vless-node.htm" title="Fast Clash - 5月20日22.4M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月20日22.4M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-24-vless-node-github.htm" title="Fast Clash - 5月24日18.9M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月24日18.9M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-4-vless-node-github.htm" title="Fast Clash - 5月4日21.9M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月4日21.9M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-11-vless-node-share.htm" title="Fast Clash - 5月11日23M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月11日23M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-12-latest-vless-node.htm" title="Fast Clash - 5月12日18.5M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月12日18.5M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-27-vless-windows.htm" title="Fast Clash - 5月27日19.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月27日19.7M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-10-free-node-subscribe.htm" title="Fast Clash - 6月10日22.5M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月10日22.5M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-11-free-vless-node.htm" title="Fast Clash - 6月11日21.7M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月11日21.7M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-14-vless-windows.htm" title="Fast Clash - 5月14日21.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月14日21.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-free-node-subscribe.htm" title="Fast Clash - 5月10日19.6M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月10日19.6M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-latest-vless-node.htm" title="Fast Clash - 5月9日21.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月9日21.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-9-free-vless-node.htm" title="Fast Clash - 6月9日20.2M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月9日20.2M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-14-latest-vless-node.htm" title="Fast Clash - 6月14日18.3M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月14日18.3M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-7-today-vless-node.htm" title="Fast Clash - 6月7日22.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 6月7日22.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-26-free-subscribe-node.htm" title="Fast Clash - 5月26日18.4M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点订阅节点|免费节点|翻墙机场分享">Fast Clash - 5月26日18.4M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点订阅节点|免费节点|翻墙机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -362,7 +363,7 @@ sudo apt-get install build-essential git
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
