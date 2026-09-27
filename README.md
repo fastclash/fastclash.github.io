@@ -1,4 +1,4 @@
-# Fast Clash - 9月20日18M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点订阅节点|免费节点|翻墙机场分享  更新时间 2026-09-20 05:13:37
+# Fast Clash - 9月27日18.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点|免费节点|翻墙机场分享  更新时间 2026-09-27 09:15:06
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://fastclash.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://fastclash.github.io/uploads/2026/09/0-20260920.yaml
-- https://fastclash.github.io/uploads/2026/09/1-20260920.yaml
-- https://fastclash.github.io/uploads/2026/09/2-20260920.yaml
-- https://fastclash.github.io/uploads/2026/09/3-20260920.yaml
-- https://fastclash.github.io/uploads/2026/09/4-20260920.yaml
+- https://fastclash.github.io/uploads/2026/09/0-20260927.yaml
+- https://fastclash.github.io/uploads/2026/09/1-20260927.yaml
+- https://fastclash.github.io/uploads/2026/09/2-20260927.yaml
+- https://fastclash.github.io/uploads/2026/09/3-20260927.yaml
+- https://fastclash.github.io/uploads/2026/09/4-20260927.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://fastclash.github.io/uploads/2026/09/0-20260920.txt
-- https://fastclash.github.io/uploads/2026/09/1-20260920.txt
-- https://fastclash.github.io/uploads/2026/09/2-20260920.txt
-- https://fastclash.github.io/uploads/2026/09/3-20260920.txt
-- https://fastclash.github.io/uploads/2026/09/4-20260920.txt
+- https://fastclash.github.io/uploads/2026/09/0-20260927.txt
+- https://fastclash.github.io/uploads/2026/09/1-20260927.txt
+- https://fastclash.github.io/uploads/2026/09/2-20260927.txt
+- https://fastclash.github.io/uploads/2026/09/3-20260927.txt
+- https://fastclash.github.io/uploads/2026/09/4-20260927.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://fastclash.github.io/uploads/2026/09/20260920.json
+- https://fastclash.github.io/uploads/2026/09/20260927.json
 
 ## 更多Clash节点订阅 ：
 
